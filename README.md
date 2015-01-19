@@ -68,4 +68,5 @@ javac -d ./build/classes src/com/gmail/josephui/simplentpservice/*.java src/com/
 
 Assuming you have complied the Java source code via the above step, you may run this application in Windows by the following:
 In command line prompt, navigate to the folder containing the build folder of this application, then enter the following:
-java -cp ./build/classes/ com.gmail.josephui.simplentpservice.Main
+java -cp ./build/classes/ com.gmail.josephui.simplentpservice.Main NUM_CONSUMERS
+where NUM_CONSUMERS is the number of consumers this application will start with, as denoted in the specification.
