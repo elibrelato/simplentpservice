@@ -45,6 +45,10 @@ because there is only one Producer, but many Consumers.
 respective packets to be use in the communication between the server and clients. Factory 
 methods allows for simplicity and clarity of code, as well as reusability.
 
+- Test mode can be toggled by changing the boolean TEST_MODE_ON in 
+com.gmail.josephui.simplentpservice.TestMod , test mode display extra messages to console 
+regarding the status of the application.
+
 
 POTENTIAL IMPROVEMENTS
 ----------------------
@@ -55,10 +59,13 @@ byte[])"  for code clarity.
 
 HOW TO RUN
 ----------
-This application requires the Java Runtime Environment (JRE) to execute, please visit 
-www.java.com to download the latest version of JRE to ensure compability.
-Assuming you have JRE correctly installed in your system, you may run this application in 
-Windows by the following:
+This application requires the Java Development Kit (JDK), please visitwww.java.com to download the latest version of JDK and JRE to ensure compability.
+
+Assuming you have JDK correctly installed in your system, you may compile the source files in Windows by the following:
 In command line prompt, navigate to the folder containing the build folder of this 
 application, then enter the following:
-java -cp build\classes\ com.gmail.josephui.simplentpservice.Main
+javac -d ./build/classes src/com/gmail/josephui/simplentpservice/*.java src/com/gmail/josephui/simplentpservice/client/*.java src/com/gmail/josephui/simplentpservice/server/*.java
+
+Assuming you have complied the Java source code via the above step, you may run this application in Windows by the following:
+In command line prompt, navigate to the folder containing the build folder of this application, then enter the following:
+java -cp ./build/classes/ com.gmail.josephui.simplentpservice.Main
