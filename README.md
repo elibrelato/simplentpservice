@@ -64,11 +64,12 @@ This application requires the Java Development Kit (JDK), please visitwww.java.c
 Assuming you have JDK correctly installed in your system, you may compile the source files in Windows by the following:
 In command line prompt, navigate to the folder containing the build folder of this 
 application, then enter the following:
+
 javac -d ./build/classes src/com/gmail/josephui/simplentpservice/*.java src/com/gmail/josephui/simplentpservice/client/*.java src/com/gmail/josephui/simplentpservice/server/*.java
 
 Assuming you have complied the Java source code via the above step, you may run this application in Windows by the following:
 In command line prompt, navigate to the folder containing the build folder of this application, then enter the following:
 
-"java -cp ./build/classes/ com.gmail.josephui.simplentpservice.Main NUM_CONSUMERS"
+java -cp ./build/classes/ com.gmail.josephui.simplentpservice.Main NUM_CONSUMERS
 
 where NUM_CONSUMERS is the number of consumers this application will start with, as denoted in the specification.
